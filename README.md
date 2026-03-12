@@ -52,6 +52,10 @@ npm run build
 
 Output in `frontend/dist/`.
 
+### Deploy to Vercel
+
+The project includes `vercel.json` for monorepo deployment. Connect the repo to Vercel; it will build the frontend automatically. Optional env vars in Vercel: `VITE_ERC1155_CONTRACT`, `VITE_RPC_URL`.
+
 ## Smart Contract
 
 ### Compile & Test

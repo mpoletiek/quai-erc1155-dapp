@@ -1,0 +1,50 @@
+{
+  "name": "quai-erc1155-dapp",
+  "version": "1.0.0",
+  "description": "Full-featured ERC1155 test contract for Quai Network - used to exercise Quai Vault multisig token handling",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "test": "hardhat test --network hardhat",
+    "test:gas": "REPORT_GAS=true hardhat test --network hardhat",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:cyprus1": "hardhat run scripts/deploy.ts --network cyprus1",
+    "mint": "hardhat run scripts/mint.ts --network cyprus1",
+    "transfer": "hardhat run scripts/transfer.ts --network cyprus1",
+    "check-balance": "hardhat run scripts/check-balance.ts --network cyprus1",
+    "set-uri": "hardhat run scripts/set-uri.ts --network cyprus1",
+    "grant-role": "hardhat run scripts/grant-role.ts --network cyprus1",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "quai",
+    "erc1155",
+    "smart-contracts",
+    "testnet"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.3",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.10.6",
+    "chai": "^4.3.10",
+    "hardhat": "^2.19.5",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.4.0",
+    "@quai/hardhat-deploy-metadata": "^1.0.8",
+    "dotenv": "^16.4.5",
+    "quais": "^1.0.0-alpha.53"
+  }
+}

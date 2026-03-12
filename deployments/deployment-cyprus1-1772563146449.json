@@ -1,0 +1,18 @@
+{
+  "network": "cyprus1",
+  "chainId": "15000",
+  "deployer": "0x0006506bDE7140b85DED58a40D7444F84cde4821",
+  "timestamp": "2026-03-03T18:39:06.448Z",
+  "contracts": {
+    "QuaiTestERC1155": "0x005ce6Bae8AFA47328b5c711b19e40afD881cE38"
+  },
+  "ipfsHashes": {
+    "QuaiTestERC1155": "Qme8PoBpTZCVVJtFN4TTHaGUDoJDNxKkVmczc1W2Zv4vwM"
+  },
+  "constructorArgs": {
+    "defaultAdmin": "0x0006506bDE7140b85DED58a40D7444F84cde4821",
+    "baseUri": "https://example.com/api/token/{id}.json",
+    "royaltyReceiver": "0x0006506bDE7140b85DED58a40D7444F84cde4821",
+    "royaltyFeeNumerator": 500
+  }
+}
